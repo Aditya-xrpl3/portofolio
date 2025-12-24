@@ -237,3 +237,64 @@
   letter-spacing: 1px;
   margin-bottom: var(--space-sm);
 }
+
+.portfolio-overlay p {
+  font-size: var(--text-sm);
+  color: var(--color-light-dim);
+  margin-top: var(--space-sm);
+  line-height: 1.5;
+}
+
+.portfolio-overlay .view-live {
+  display: inline-block;
+  margin-top: var(--space-md);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--color-gradient);
+  color: white;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  border-radius: var(--radius-full);
+  transition: all var(--transition-base);
+}
+
+.portfolio-card:hover .view-live {
+  transform: translateX(5px);
+}
+
+/* Coming Soon Card */
+.portfolio-card.coming-soon {
+  background: rgba(255, 255, 255, 0.03);
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.coming-soon-content {
+  text-align: center;
+  color: var(--color-light-dim);
+}
+
+.coming-soon-content .emoji {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--space-md);
+  opacity: 0.5;
+}
+
+.coming-soon-content h3 {
+  margin-bottom: var(--space-sm);
+}
+
+.coming-soon-content p {
+  font-size: var(--text-sm);
+  opacity: 0.5;
+}
+
+/* Portfolio Card as Link */
+a.portfolio-card {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
